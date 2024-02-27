@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { HiOutlineBookmark, HiBookmark } from 'react-icons/hi2';
+import { HiOutlineBookmark } from 'react-icons/hi2';
 import { Context } from '../context/Context';
 import Aos from 'aos';
 
