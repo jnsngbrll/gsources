@@ -1,14 +1,11 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { SidebarData } from '../data/SidebarData';
 import { Items } from '../data/Items';
 import { Item } from './Item';
-import { Context } from '../context/Context';
 
 export default function Main() {
   const location = useLocation();
-
-  const { isMenuActive } = useContext(Context);
 
   return (
     <div className="max-w-7xl m-auto mt-8">
