@@ -18,13 +18,13 @@ export const Item = ({ itemIndex, itemData }) => {
     <Link
       data-aos="fade-up"
       onClick={() => addToFavorites(itemIndex)}
-      className="w-[300px] flex flex-col gap-2 p-8 bg-[--secondary] rounded-xl"
+      className="w-[290px] flex flex-col gap-2 p-8 bg-[--secondary] rounded-xl"
     >
       <div className="flex justify-between">
         <img
           src={itemData.image}
           alt=""
-          className="w-[50px] h-[50px] rounded-xl"
+          className="w-[40px] h-[40px] rounded-xl"
         />
         <div className="text-2xl text-[#FDB813]">
           <HiOutlineBookmark />

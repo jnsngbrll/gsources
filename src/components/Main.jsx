@@ -1,16 +1,19 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { SidebarData } from '../data/SidebarData';
 import { Items } from '../data/Items';
 import { Item } from './Item';
+import { Context } from '../context/Context';
 
 export default function Main() {
   const location = useLocation();
 
+  const { isMenuActive } = useContext(Context);
+
   return (
     <div className="max-w-7xl m-auto mt-8">
       <div className="flex justify-center gap-8 relative">
-        <div className="hidden xl:block absolute left-[-14.2rem] p-8 bg-[--secondary] rounded-xl shadow">
+        <div className="absolute left-[-13rem] p-8 bg-[--secondary] rounded-xl shadow">
           <div className="flex flex-col gap-8">
             {SidebarData.map((sbData, index) => (
               <div key={index}>
